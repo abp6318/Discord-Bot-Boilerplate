@@ -1,0 +1,23 @@
+{
+  "name": "discord-bot-boilerplate",
+  "version": "1.0.0",
+  "description": "Your description here",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abp6318/Discord-Bot-Boilerplate.git"
+  },
+  "author": "Your name here",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abp6318/Discord-Bot-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/abp6318/Discord-Bot-Boilerplate#readme",
+  "dependencies": {
+    "discord.js": "^12.5.0"
+  }
+}
