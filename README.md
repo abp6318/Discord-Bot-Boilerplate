@@ -41,7 +41,7 @@ You'll have to update the basic information in the directory, and change a handf
 3. Enter into the terminal ```npm init```. You'll be prompted a handful of times to enter information about your project, and this will create your package.json file. Make sure you have a way to run your bot locally by adding a similar line that I have on line 8 of my package.json ```"start": "node bot.js"```. In the initial package.json, it says index.js next "main", change that to bot.js as well.
 4. Enter into the terminal ```npm install node```.
 5. Enter into the terminal ```npm install discord.js```.
-6. Create a new file called config.json (similar to the one in the repository above). Look to the config.json file in this repository and copy it's contents.
+6. Create a new file called config.json, similar to the one in the repository above named config.example.json. Look to the config.example.json file in this repository and copy it's contents.
 7. Return to your Discord Developer Portal (https://discord.com/developers/applications).
 8. Select your bot > Select "Bot" on the left side of your screen > Under "Token" in the center of your screen, click on "Copy". If your token is revealed online in anyway, you need to return to this point and regenerate your key.
 9. Now that you've copied your key, paste it into the config.json file where it says "your-token-here".
