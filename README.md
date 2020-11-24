@@ -47,9 +47,28 @@ You'll have to update the basic information in the directory, and change a handf
 9. Now that you've copied your key, paste it into the config.json file where it says "your-token-here".
 10. Create a new file, one that I mentioned briefly earlier, called bot.js. This is where you can store your primary content for your bot, but are more than capable of connecting a number of other files to it.
 
-## Writing content
+## Writing Content (v12!!!)
+
+It takes a bit of practice, but with time, you'll be flying through code. Check out documentation from the following sources. Wherever you find documentation the easiet to learn, make sure you're looking at version 12 (v12). This is very important if you want your code to run! Happy coding!
+
+1. https://discordjs.guide/
+2. https://discord.js.org/
 
 ## Testing Locally
 
+If you did all of the set up in the instructions I listed above, you should be able to enter ```npm start``` into your terminal (while in the directory), and your bot should run (given it has the proper code). When running your bot, it is live on each and every server you added it to. This also means that any action you program your bot to do on one server, it will do on every server it's added to.
+
 ## Hosting Your Bot Free On Heroku
 
+### Getting Started On Heroku
+
+1. If you haven't yet, create a repository, and add your code to it. See here on how to create a repository (https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/create-a-repo).
+2. Sign up for a Heroku account (https://signup.heroku.com/).
+3. Once you've confirmed your account via email, click on the button that reads "Create a new app".
+4. Follow the instructions under "Deploy using Heroku Git" on the Heroku Dashboard.
+
+## Contact
+
+Well, I hope this infomation at least got you on the right path to making a super cool Discord bot! I'd love to hear about the cool creations you've made.
+
+Feel free to email me: abp6318@rit.edu or blueputt@gmail.com
