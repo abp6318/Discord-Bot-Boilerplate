@@ -1,7 +1,7 @@
 # Discord-Bot-Boilerplate
 
 11/23/2020 - Hello! This is a template for those who want to create their own Discord bot!
-01/31/2020 - Preparing for a presentation I'm giving tomorrow and realizing that this lacks a few steps in the Heroku section. Bear with me as I make updates and separate that section into two. There are three ways to host the bot through Heroku, and I'm realizing I should have clearly separated the main two. Thanks.
+\n01/31/2020 - Preparing for a presentation I'm giving tomorrow and realizing that this lacks a few steps in the Heroku section. Bear with me as I make updates and separate that section into two. There are three ways to host the bot through Heroku, and I'm realizing I should have clearly separated the main two. Thanks.
 
 ## Getting Started
 
