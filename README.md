@@ -68,16 +68,17 @@ If you did all of the set up in the instructions I listed above, you should be a
 
 #### Getting Started On Heroku - to be editted
 
-1. If you haven't yet, create a repository, and add your code to it. See here on how to create a repository (https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/create-a-repo).
-2. In your repository, add a file called "Procfile". It has no extension, and is simply titled "Procfile" with a capital 'P'. Add this single line of code to the file ```worker: node bot.js``` and add it to your repository.
-3. Sign up for a Heroku account (https://signup.heroku.com/).
-4. Once you've confirmed your account via email, click on the button that reads "Create a new app".
-5. Under "Deployment Method", click on GitHub. Attach your GitHub account to your Heroku account. 
-6. Deploy your bot
-7. While your bot is being deployed, you can view the build log under the "Activity" tab.
-8. If you set up your Profile correctly, and deployed your bot, you should see ```web npm start``` under the "Resources" tab. Make sure this is turned ON.
-9. Any pushes you make to your GitHub repository will now affect your bot.
-10. Your bot should now run 24/7, only turning off if you damage your code badly enough, switch off ```web npm start``` under the "Resources" tab, or turn off the deployment.
+1. In your repository, add a file called "Procfile". It has no extension, and is simply titled "Procfile" with a capital 'P'. Add this single line of code to the file ```worker: node bot.js``` and add it to your repository.
+2. Sign up for a Heroku account (https://signup.heroku.com/).
+3. Once you've confirmed your account via email, click on the button that reads "Create a new app".
+4. Under "Deployment Method", click on GitHub. Attach your GitHub account to your Heroku account. 
+5. Make sure you've pushed any updates for your bot to the GitHub repo we made earlier. You might have to redeploy from this spot later if you push any updates.
+6. Enable automatic deploys, and deploy your bot.
+7. While your bot is being deployed, you can view the build log by clicking "More ^v" in the top right corner, and then view logs.
+8. If you set up your Profile correctly, and deployed your bot, you should see ```worker node bot.js``` under the "Resources" tab. Make sure this is turned ON.
+9. Your bot should now run 24/7, only turning off if you damage your code badly enough, switch off ```worker node bot.js``` under the "Resources" tab, or turn off the deployment.
+
+Note: Your bot will eventually turn off if you actively use it too much, but your time will reset monthly (I think).
 
 ## Contact
 
