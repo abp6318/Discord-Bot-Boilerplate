@@ -4,7 +4,13 @@
 
 01/31/2020 - Preparing for a presentation I'm giving tomorrow and realizing that this lacks a few steps in the Heroku section. Bear with me as I make updates and separate that section into two. There are three ways to host the bot through Heroku, and I'm realizing I should have clearly separated the main two. Thanks.
 
-## Getting Started
+## Assumptions and Prerequistites
+
+This tutorial assumes the user following it understands the basics of a command line interface. Before proceeding, I recommend looking up a Youtube video on basic things like making a directory (mkdir), changing directories (cd), and paths within your respective computer system (/User/your-name-here/example/). 
+
+This tutorial also assumes the user understands some of the basics of git. While I take the time to show new users how to create a repository and clone the repo, it would be far too difficult for me to explain the smaller things. I strongly recommend the user takes the time to learn more about the following git commands at a minimum: add, commit, push, pull, fetch, and clone.
+
+## Getting Started: Making the Bot
 
 1. Make a Discord account (https://discord.com/).
 2. Go to Discord Developer Portal (https://discord.com/developers/applications).
@@ -16,38 +22,36 @@
 8. Scroll down some more and give your bot permissions. Be careful, if you allow your bot to have too much access, and you accidentally reveal your developer key to the public, bad actors can use your bot to do a number of damaging things.
 9. Once you've given your bot permissions, copy the link in the center of the page, and paste it into your browsers address bar. Add the bot to the server you want it to be on.
 
-## Setting Up Your Local Directory
+## Making your Git Repository (Repo)
 
-### Option 1: Forking the Directory
+1. If you don't have one, make a GitHub account (https://github.com/join)
+2. Once logged in, look to the top right corner of the page. You should see a + (plus sign). Click that, and then click on "New repository."
+3. Set the repo's name to something you'll remember, set the repo to private, and check off both "Add a README file" and "Add .gitignore." Under "Add .gitignore," a dropdown should appear, click on it, and enter "Node." Click "Create Repository."
+
+## Setting Up Your Local Directory
 
 #### Prerequistites
 
 1. Install Git (https://github.com/git-guides/install-git)
-
-#### Forking
-
-You can check it out how to do that here: https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo
-You'll have to update the basic information in the directory, and change a handful of the documents listed in the .gitignore file. Make sure to add the config.json to the git ignore! You don't want other people looking at your bot's token!
-
-### Option 2: Doing it Yourself
-
-#### Prerequisites
-
-1. Install Node (https://nodejs.org/en/download/).
-2. Install Node Package Manager (npm) by entering ```npm install -g npm``` into a terminal.
+2. Install Node (https://nodejs.org/en/download/).
+3. Install Node Package Manager (npm) by entering ```npm install -g npm``` into a terminal.
 
 #### Prepping the Directory
 
 1. Create a new directory (folder) in a location you can remember.
-2. Open up a terminal and move to the directory you just made.
-3. Enter into the terminal ```npm init```. You'll be prompted a handful of times to enter information about your project, and this will create your package.json file. Make sure you have a way to run your bot locally by adding a similar line that I have on line 8 of my package.json ```"start": "node bot.js"```. In the initial package.json, it says index.js next "main", change that to bot.js as well.
-4. Enter into the terminal ```npm install node```.
-5. Enter into the terminal ```npm install discord.js```.
-6. Create a new file called config.json, similar to the one in the repository above named config.example.json. Look to the config.example.json file in this repository and copy it's contents.
-7. Return to your Discord Developer Portal (https://discord.com/developers/applications).
-8. Select your bot > Select "Bot" on the left side of your screen > Under "Token" in the center of your screen, click on "Copy". If your token is revealed online in anyway, you need to return to this point and regenerate your key.
-9. Now that you've copied your key, paste it into the config.json file where it says "your-token-here".
-10. Create a new file, one that I mentioned briefly earlier, called bot.js. This is where you can store your primary content for your bot, but are more than capable of connecting a number of other files to it.
+2. Open up a terminal and move to the directory you just made. If this step doesn't make sense to you, please see the initial prerequistites for the entire tutorial.
+3. In GitHub and open your repository's code page. In the top right there should be a big green button that says "Code v" with a downward arrow. Click on that and copy the link presented to you.
+4. Enter into the terminal ```git clone <the link you copied from your repository>```.
+5. Enter into the terminal ```npm init```. You'll be prompted a handful of times to enter information about your project, and this will create your package.json file. Make sure you have a way to run your bot locally by adding a similar line that I have on line 8 of my package.json ```"start": "node bot.js"```. In the initial package.json, it says index.js next "main", change that to bot.js as well.
+6. Enter into the terminal ```npm install node```.
+7. Enter into the terminal ```npm install discord.js```.
+8. Create a new file called config.json, similar to the one in the repository above named config.example.json. Look to the config.example.json file in this repository and copy it's contents.
+9. Return to your Discord Developer Portal (https://discord.com/developers/applications).
+10. Select your bot > Select "Bot" on the left side of your screen > Under "Token" in the center of your screen, click on "Copy". If your token is revealed online in anyway, you need to return to this point and regenerate your key.
+11. Now that you've copied your key, paste it into the config.json file where it says "your-token-here".
+12. Create a new file, one that I mentioned briefly earlier, called bot.js. This is where you can store your primary content for your bot, but are more than capable of connecting a number of other files to it.
+
+Note: Your work won't look exactly like mine, but should be pretty close. If you have questions, email me: abp6318@rit.edu
 
 ## Writing Content (v12!!!)
 
@@ -62,7 +66,7 @@ If you did all of the set up in the instructions I listed above, you should be a
 
 ## Hosting Your Bot Free On Heroku
 
-### Getting Started On Heroku
+#### Getting Started On Heroku - to be editted
 
 1. If you haven't yet, create a repository, and add your code to it. See here on how to create a repository (https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/create-a-repo).
 2. In your repository, add a file called "Procfile". It has no extension, and is simply titled "Procfile" with a capital 'P'. Add this single line of code to the file ```worker: node bot.js``` and add it to your repository.
